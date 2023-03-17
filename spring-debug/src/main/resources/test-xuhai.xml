@@ -5,4 +5,7 @@
     <bean class="com.mashibing.test.T" id="t">
         <property name="t" value="10086"/>
     </bean>
+
+
+
 </beans>
