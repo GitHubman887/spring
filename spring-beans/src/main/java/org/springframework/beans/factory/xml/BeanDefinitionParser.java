@@ -52,6 +52,10 @@ public interface BeanDefinitionParser {
 	 * provides access to a {@link org.springframework.beans.factory.support.BeanDefinitionRegistry}
 	 * @return the primary {@link BeanDefinition}
 	 */
+	/**
+	* xml：{@link org.springframework.beans.factory.xml.AbstractBeanDefinitionParser}
+	* 注解：{@link org.springframework.context.annotation.ComponentScanBeanDefinitionParser}
+	* */
 	@Nullable
 	BeanDefinition parse(Element element, ParserContext parserContext);
 
