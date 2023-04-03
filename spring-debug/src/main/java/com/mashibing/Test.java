@@ -10,8 +10,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
     public static void main(String[] args) {
-////        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("factoryBean.xml");
-////        MyFactoryBean bean1 = (MyFactoryBean) ac.getBean( "&myFactoryBean");
+        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("factoryBean.xml");
+//        MyFactoryBean bean1 = (MyFactoryBean) ac.getBean( "&myFactoryBean");
 ////        System.out.println(bean1);
 ////        User bean = (User) ac.getBean("myFactoryBean");
 ////        System.out.println(bean.getUsername());
@@ -58,9 +58,9 @@ public class Test {
 //        A a = new A();
 //        B b = new B();
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
+/*        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
         Student bean = context.getBean(Student.class);
-        context.close();
+        context.close();*/
 
         //想通过student获取其他bean对象怎么办？
 
