@@ -85,6 +85,7 @@ public class ComponentScanBeanDefinitionParser implements BeanDefinitionParser {
 		// 解析占位符
 		basePackage = parserContext.getReaderContext().getEnvironment().resolvePlaceholders(basePackage);
 		// 解析base-package(允许通过,;\t\n中的任一符号填写多个)
+		// 按照一定的字符串(,;\t\n)分割base-package
 		String[] basePackages = StringUtils.tokenizeToStringArray(basePackage,
 				ConfigurableApplicationContext.CONFIG_LOCATION_DELIMITERS);
 

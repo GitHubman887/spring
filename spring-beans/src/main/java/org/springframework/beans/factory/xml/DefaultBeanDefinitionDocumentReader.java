@@ -92,6 +92,11 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 */
 	@Override
 	public void registerBeanDefinitions(Document doc, XmlReaderContext readerContext) {
+		/*
+		* readerContext.namespaceHandlerResolver
+		* handlerMappingsLocation = META-INF/spring.handlers
+		*
+		* */
 		this.readerContext = readerContext;
 		doRegisterBeanDefinitions(doc.getDocumentElement());
 	}

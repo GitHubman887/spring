@@ -285,6 +285,10 @@ public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPo
 	 * {@link Configuration} classes.
 	 */
 	public void processConfigBeanDefinitions(BeanDefinitionRegistry registry) {
+		/*
+		* 涉及到一系列注解的扫描
+		* @Configuration、@Bean、@Import、@Component、@ComponentScan、@ComponentScans
+		* */
 		// 创建存放BeanDefinitionHolder的对象集合
 		List<BeanDefinitionHolder> configCandidates = new ArrayList<>();
 		// 当前registry就是DefaultListableBeanFactory，获取所有已经注册的BeanDefinition的beanName
