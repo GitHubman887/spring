@@ -3,6 +3,9 @@ package com.mashibing.test;
 public class T {
     private int t;
 
+    public static void main(String[] args) {
+
+    }
 
 
     public int getT() {
